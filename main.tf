@@ -9,10 +9,6 @@ provider "aws" {
     secret_key = "${var.AWS_SECRET_KEY}"
     region = "${var.AWS_REGION}"
 }
-provider "aws" {
-  region = "ap-south-1"
-}
-
 resource "aws_s3_bucket" "test" {
   bucket = "test"
   acl = "private"
